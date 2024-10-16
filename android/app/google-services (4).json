@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "170785786032",
+    "project_id": "goals-46472",
+    "storage_bucket": "goals-46472.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170785786032:android:da41026a0fe9b572b5d375",
+        "android_client_info": {
+          "package_name": "com.vstrkvpolina.goals"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqYihfFL-gKlZ88POn86bmXlbAM_CLzJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
