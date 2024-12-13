@@ -20,13 +20,18 @@ Habit _$HabitFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Habit {
+  @HiveField(0)
   @JsonKey(name: '_id')
   String get id =>
       throw _privateConstructorUsedError; // Уникальный идентификатор привычки
+  @HiveField(1)
   String get userId => throw _privateConstructorUsedError;
+  @HiveField(2)
   String get name => throw _privateConstructorUsedError; // Название привычки
+  @HiveField(3)
   String? get description =>
       throw _privateConstructorUsedError; // Описание (опционально)
+  @HiveField(4)
   bool get isFavorite => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -40,11 +45,11 @@ abstract class $HabitCopyWith<$Res> {
       _$HabitCopyWithImpl<$Res, Habit>;
   @useResult
   $Res call(
-      {@JsonKey(name: '_id') String id,
-      String userId,
-      String name,
-      String? description,
-      bool isFavorite});
+      {@HiveField(0) @JsonKey(name: '_id') String id,
+      @HiveField(1) String userId,
+      @HiveField(2) String name,
+      @HiveField(3) String? description,
+      @HiveField(4) bool isFavorite});
 }
 
 /// @nodoc
@@ -99,11 +104,11 @@ abstract class _$$HabitImplCopyWith<$Res> implements $HabitCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: '_id') String id,
-      String userId,
-      String name,
-      String? description,
-      bool isFavorite});
+      {@HiveField(0) @JsonKey(name: '_id') String id,
+      @HiveField(1) String userId,
+      @HiveField(2) String name,
+      @HiveField(3) String? description,
+      @HiveField(4) bool isFavorite});
 }
 
 /// @nodoc
@@ -152,32 +157,37 @@ class __$$HabitImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$HabitImpl implements _Habit {
   const _$HabitImpl(
-      {@JsonKey(name: '_id') this.id = '',
-      this.userId = '',
-      this.name = '',
-      this.description = '',
-      this.isFavorite = false});
+      {@HiveField(0) @JsonKey(name: '_id') this.id = '',
+      @HiveField(1) this.userId = '',
+      @HiveField(2) this.name = '',
+      @HiveField(3) this.description = '',
+      @HiveField(4) this.isFavorite = false});
 
   factory _$HabitImpl.fromJson(Map<String, dynamic> json) =>
       _$$HabitImplFromJson(json);
 
   @override
+  @HiveField(0)
   @JsonKey(name: '_id')
   final String id;
 // Уникальный идентификатор привычки
   @override
   @JsonKey()
+  @HiveField(1)
   final String userId;
   @override
   @JsonKey()
+  @HiveField(2)
   final String name;
 // Название привычки
   @override
   @JsonKey()
+  @HiveField(3)
   final String? description;
 // Описание (опционально)
   @override
   @JsonKey()
+  @HiveField(4)
   final bool isFavorite;
 
   @override
@@ -220,24 +230,29 @@ class _$HabitImpl implements _Habit {
 
 abstract class _Habit implements Habit {
   const factory _Habit(
-      {@JsonKey(name: '_id') final String id,
-      final String userId,
-      final String name,
-      final String? description,
-      final bool isFavorite}) = _$HabitImpl;
+      {@HiveField(0) @JsonKey(name: '_id') final String id,
+      @HiveField(1) final String userId,
+      @HiveField(2) final String name,
+      @HiveField(3) final String? description,
+      @HiveField(4) final bool isFavorite}) = _$HabitImpl;
 
   factory _Habit.fromJson(Map<String, dynamic> json) = _$HabitImpl.fromJson;
 
   @override
+  @HiveField(0)
   @JsonKey(name: '_id')
   String get id;
   @override // Уникальный идентификатор привычки
+  @HiveField(1)
   String get userId;
   @override
+  @HiveField(2)
   String get name;
   @override // Название привычки
+  @HiveField(3)
   String? get description;
   @override // Описание (опционально)
+  @HiveField(4)
   bool get isFavorite;
   @override
   @JsonKey(ignore: true)
